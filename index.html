@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A collection of small browser games." />
+    <title>Game Shelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="launcher.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="eyebrow"><span class="status-dot"></span> NANDISHBS / GAME SHELF</div>
+        <h1>Pick a game.<br /><em>Make a move.</em></h1>
+        <p class="intro">A hand-picked collection of quick browser games. Everything lives in this repo, so choose a card and start playing.</p>
+        <div class="rule" aria-hidden="true"></div>
+        <div class="library-meta"><span id="game-count">04 GAMES</span><span>NO INSTALLATION REQUIRED</span></div>
+      </header>
+
+      <section class="game-grid" aria-label="Games">
+        <a class="game-card card-orange" href="games/make-some-boxes/index.html">
+          <div class="card-top"><span class="number">01</span><span class="tag">ARCADE</span></div>
+          <div class="game-art boxes-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="card-copy"><h2>Make Some Boxes</h2><p>Connect the dots and claim the most squares.</p></div>
+          <span class="play-link">PLAY NOW <b>↗</b></span>
+        </a>
+
+        <a class="game-card card-purple" href="games/3x3-sliding-puzzle/index.html">
+          <div class="card-top"><span class="number">02</span><span class="tag">PUZZLE</span></div>
+          <div class="game-art puzzle-art"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span></span></div>
+          <div class="card-copy"><h2>3×3 Sliding Puzzle</h2><p>Rearrange the tiles and solve it in fewer moves.</p></div>
+          <span class="play-link">PLAY NOW <b>↗</b></span>
+        </a>
+
+        <a class="game-card card-blue" href="games/rock-paper-scissors/index.html">
+          <div class="card-top"><span class="number">03</span><span class="tag">CLASSIC</span></div>
+          <div class="game-art rps-art"><span>✌</span><span>✊</span><span>✋</span></div>
+          <div class="card-copy"><h2>Rock Paper Scissors</h2><p>Read the opponent, pick your move, win the round.</p></div>
+          <span class="play-link">PLAY NOW <b>↗</b></span>
+        </a>
+
+        <a class="game-card card-green" href="games/tic-tac-toe/index.html">
+          <div class="card-top"><span class="number">04</span><span class="tag">TWO PLAYER</span></div>
+          <div class="game-art ttt-art"><span>×</span><span>○</span><span>×</span><span>○</span></div>
+          <div class="card-copy"><h2>Tic Tac Toe</h2><p>Take turns, make a line, and don't give up the center.</p></div>
+          <span class="play-link">PLAY NOW <b>↗</b></span>
+        </a>
+      </section>
+
+      <footer><span>BUILT WITH HTML, CSS &amp; JAVASCRIPT</span><span>© 2024 NANDISHBS</span></footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rearrange the tiles and solve the 3x3 sliding puzzle." />
+    <title>3×3 Sliding Puzzle | Game Shelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <a class="shelf-link" href="../../index.html"><span>←</span> BACK TO GAME SHELF</a>
+
+      <header>
+        <div class="eyebrow"><span class="status-dot"></span> GAME 02 / PUZZLE</div>
+        <h1>3×3 <em>Sliding Puzzle</em></h1>
+        <p class="intro">Rearrange the tiles and put every number back in order. Tap a tile beside the gap to move it.</p>
+      </header>
+
+      <section class="game-card" aria-label="3 by 3 sliding puzzle board">
+        <div class="card-top"><span class="board-label">THE NINE TILE TEST</span><span class="turn-note">FIND THE ORDER</span></div>
+        <div class="board-stage">
+          <div id="boxborder">
+            <div id="box"></div>
+          </div>
+        </div>
+        <div class="controls">
+          <button onclick="window.location.reload()">New Game <span>↻</span></button>
+          <p>Tap any tile next to the empty space.</p>
+        </div>
+        <div id="congrats">
+          <p>Congratulations</p>
+          <p>You Won !...</p>
+        </div>
+      </section>
+
+      <footer><span id="developer">BUILT BY NANDISH BS / CS&amp;E</span><span>RESET &amp; PLAY AGAIN</span></footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

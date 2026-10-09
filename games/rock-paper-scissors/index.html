@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors By Nandish BS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RockPaperScissors.css">
+</head>
+<body>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Game navigation">
+            <a class="shelf-link" href="../../index.html">← GAME SHELF</a>
+            <span class="eyebrow"><span class="status-dot"></span> 03 / CLASSIC</span>
+        </nav>
+
+        <header id="heading">
+            <div class="heading-copy">
+                <span class="section-label">QUICK MATCH</span>
+                <h1>ROCK<br><em>PAPER SCISSORS</em></h1>
+                <p>Read the opponent, pick your move, and be the first to three.</p>
+            </div>
+            <a id="rulesbutton" href="./Rules.png">RULES <span>↗</span></a>
+        </header>
+
+        <section id="msgbox" aria-live="polite">
+            <span class="section-label">ROUND STATUS</span>
+            <p id="msg"></p>
+        </section>
+
+        <section id="gamecontainer" aria-label="Rock paper scissors match">
+            <table>
+                <tr id="point">
+                    <td id="playerpoints" class="points">
+                        <div class="player-label">
+                            <img src="./profile/player profile.png" id="pprofileimg" alt="Player">
+                            <p class="name">PLAYER</p>
+                        </div>
+                        <div class="point-lights" aria-label="Player score">
+                            <img src="./profile/grey.png" class="ppoint" alt="">
+                            <img src="./profile/grey.png" class="ppoint" alt="">
+                            <img src="./profile/grey.png" class="ppoint" alt="">
+                        </div>
+                    </td>
+                    <td id="computerpoints" class="points">
+                        <div class="player-label">
+                            <p class="name">COMPUTER</p>
+                            <img src="./profile/computer profile.png" id="cprofileimg" alt="Computer">
+                        </div>
+                        <div class="point-lights" aria-label="Computer score">
+                            <img src="./profile/grey.png" class="cpoint" alt="">
+                            <img src="./profile/grey.png" class="cpoint" alt="">
+                            <img src="./profile/grey.png" class="cpoint" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr id="area">
+                    <td id="playerarea" class="areas"><img id="playerareaimage" src="./playersideimages/rock.png" alt="Player's selected move"></td>
+                    <td id="computerarea" class="areas"><img id="computerareaimage" src="./computersideimages/rock.png" alt="Computer's selected move"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="choice-panel" aria-labelledby="choice-title">
+            <div class="panel-heading">
+                <span id="choice-title" class="section-label">MAKE YOUR MOVE</span>
+                <span class="keyboard-hint">TAP A CARD</span>
+            </div>
+            <div id="selectcontainer">
+                <img src="./selectimages/rock select.jpg" alt="Choose rock" class="selectionimage">
+                <img src="./selectimages/paper select.jpg" alt="Choose paper" class="selectionimage">
+                <img src="./selectimages/scissor select.jpg" alt="Choose scissors" class="selectionimage">
+                <img src="./selectimages/restart.jpg" id="restart" alt="Restart game" onclick="location.reload()">
+            </div>
+        </section>
+
+        <footer>
+            <span>FIRST TO 03 WINS</span>
+            <span>BUILT BY NANDISH BS</span>
+        </footer>
+    </main>
+    <script src="RockPaperScissors.js"></script>
+</body>
+</html>

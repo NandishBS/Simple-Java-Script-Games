@@ -1,0 +1,30 @@
+:root { --ink: #171717; --paper: #f3efe7; --muted: #736f68; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'Space Grotesk', sans-serif; }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .18; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E"); }
+.shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 58px 0 32px; }
+.hero { max-width: 720px; }
+.eyebrow, .library-meta, footer, .tag, .number { font-family: 'DM Mono', monospace; letter-spacing: .08em; font-size: 11px; }
+.eyebrow { display: flex; align-items: center; gap: 9px; color: var(--muted); }
+.status-dot { width: 8px; height: 8px; display: inline-block; border-radius: 50%; background: #65a85d; box-shadow: 0 0 0 4px #d8e5d2; }
+h1 { font-size: clamp(58px, 9vw, 108px); line-height: .91; letter-spacing: -.08em; margin: 34px 0 24px; font-weight: 700; }
+h1 em { color: #e4572e; font-style: normal; }
+.intro { max-width: 480px; color: var(--muted); line-height: 1.65; font-size: 15px; }
+.rule { border-top: 1px solid #d0c9be; margin: 45px 0 13px; }
+.library-meta { display: flex; justify-content: space-between; color: var(--muted); }
+.game-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 28px; }
+.game-card { min-height: 420px; padding: 22px; position: relative; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: var(--ink); border: 1px solid rgba(23,23,23,.12); transition: transform .25s ease, box-shadow .25s ease; }
+.game-card:hover, .game-card:focus-visible { transform: translateY(-6px) rotate(-.3deg); box-shadow: 10px 12px 0 rgba(23,23,23,.12); outline: none; }
+.card-orange { background: #f7b665; } .card-purple { background: #b8a5db; } .card-blue { background: #91c4d0; } .card-green { background: #bad4a4; }
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.number { font-size: 18px; } .tag { padding: 7px 9px; border: 1px solid rgba(23,23,23,.35); font-size: 9px; }
+.game-art { height: 160px; margin: 18px 0 10px; display: flex; align-items: center; justify-content: center; }
+.boxes-art { display: grid; grid-template-columns: repeat(3, 45px); gap: 5px; transform: rotate(-8deg); }
+.boxes-art i { height: 45px; border: 3px solid var(--ink); background: #f8d092; } .boxes-art i:nth-child(2), .boxes-art i:nth-child(4) { background: #e4572e; } .boxes-art i:nth-child(5) { grid-column: 2; }
+.puzzle-art { width: 150px; height: 150px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; transform: rotate(5deg); } .puzzle-art span { display: grid; place-items: center; border: 2px solid var(--ink); background: #dfd2f1; font-family: 'DM Mono'; font-size: 16px; } .puzzle-art span:nth-child(2n) { background: #7b5fb1; color: #fff; }
+.rps-art { gap: 12px; transform: rotate(-6deg); } .rps-art span { width: 76px; height: 96px; display: grid; place-items: center; border: 2px solid var(--ink); background: #c8e3e8; font-size: 45px; } .rps-art span:nth-child(2) { transform: translateY(-18px); background: #e2f0e8; }
+.ttt-art { width: 165px; display: grid; grid-template-columns: repeat(2, 1fr); transform: rotate(7deg); } .ttt-art span { font-family: Arial; font-size: 65px; line-height: .7; text-align: center; } .ttt-art span:nth-child(odd) { color: #e4572e; } .ttt-art span:nth-child(even) { color: #456d36; }
+.card-copy { margin-top: auto; } h2 { font-size: clamp(25px, 3vw, 34px); line-height: 1; letter-spacing: -.05em; margin: 0 0 11px; } .card-copy p { max-width: 260px; margin: 0; color: rgba(23,23,23,.7); font-size: 13px; line-height: 1.45; }
+.play-link { margin-top: 24px; border-top: 1px solid rgba(23,23,23,.3); padding-top: 13px; font-family: 'DM Mono'; letter-spacing: .08em; font-size: 11px; } .play-link b { float: right; font-size: 17px; line-height: 10px; }
+footer { display: flex; justify-content: space-between; color: var(--muted); margin-top: 38px; font-size: 9px; }
+@media (max-width: 680px) { .shell { width: min(100% - 28px, 520px); padding-top: 35px; } h1 { font-size: 62px; } .game-grid { grid-template-columns: 1fr; } .game-card { min-height: 390px; } footer { gap: 20px; flex-direction: column; } }

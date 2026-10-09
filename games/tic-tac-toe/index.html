@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe by Nandish BS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ttt.css">
+</head>
+<body>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Game navigation">
+            <a class="shelf-link" href="../../index.html">← GAME SHELF</a>
+            <span class="eyebrow"><span class="status-dot"></span> 04 / TWO PLAYER</span>
+        </nav>
+
+        <header id="hdcontainer">
+            <div>
+                <span class="section-label">THE CLASSIC GRID</span>
+                <h1>TIC TAC <em>TOE</em></h1>
+                <p id="hdpara">the game of...</p>
+                <div class="player-legend" aria-label="Players">
+                    <h2>O</h2><span>&amp;</span><h2>X</h2>
+                </div>
+            </div>
+            <div class="header-mark" aria-hidden="true"><span>×</span><span>○</span><span>×</span><span>○</span></div>
+        </header>
+
+        <section id="msgcontainer" aria-live="polite">
+            <span class="section-label">CURRENT TURN</span>
+            <p id="msg" class="makegreen">Player O's turn.</p>
+        </section>
+
+        <section id="gamecontainer" aria-label="Tic tac toe board">
+            <table id="gamebox">
+                <tr>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                </tr>
+                <tr>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                </tr>
+                <tr>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                    <td class="tiles"> </td>
+                </tr>
+            </table>
+        </section>
+
+        <div id="restartcontainer">
+            <button id="restartbutton" onclick="location.reload()">NEW ROUND <span>↻</span></button>
+        </div>
+
+        <footer id="documentcontainer">
+            <span class="document">O STARTS · TAKE TURNS · OWN THE CENTER</span>
+            <span class="document">BUILT BY NANDISH BS</span>
+        </footer>
+    </main>
+    <script src="ttt.js"></script>
+</body>
+</html>
